@@ -1,0 +1,100 @@
+/*Author Henrique Oliveira ID: 20190611*/
+
+
+/*Set up style for body*/
+body {
+	background-image: url("background.jpg"); /*background.jpg was taken from Unsplash (https://unsplash.com/photos/48YwNFr2UmE)*/
+	background-size: cover;
+}
+
+/*Set up style for h1*/
+h1 {
+	color: #FB882D;
+	font-size: 70px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/*Set up style for div wrap*/
+#wrap{
+	width: 410px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 10px;
+	background: #FEFFB3;  
+    line-height: 35px;
+	text-align: left;
+	border-radius: 2px;
+}
+
+/*Set up style for legend*/
+#wrap p{
+	font-size: 20px;
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	color: #FEFFB3;
+	background-color: #47290E;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+}
+
+/*Set up style for label*/
+#wrap label{
+	margin-right: 30px;
+	display: block;
+	font-family: Georgia, serif;
+	font-size: 12px;
+	color: #47290E;
+    font-weight: bold;
+}
+
+/*Set up border style for fieldset*/
+#wrap fieldset{
+    border-radius: 8px;
+}
+
+/*Set up style for submitLogin*/
+#wrap input#submitLogin {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 7px;
+	padding-bottom:7px;
+	color: #FEFFB3;
+	background-color: #47290E;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+/*Set up style for checkout*/
+#wrap input#checkout {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: #FEFFB3;
+	background-color: #47290E;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+/*Set up style for burgerTotal*/
+#wrap div#burgerTotal {
+    padding-left:10px;
+	padding-right:10px;
+	padding-top: 7px;
+	padding-bottom:7px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	text-align: center;
+	font-size: 18px;
+    font-weight:bold;
+	color: #47290E;
+    background-color:white;
+	border-radius: 3px;
+}

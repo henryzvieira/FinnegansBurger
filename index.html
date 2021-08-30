@@ -1,0 +1,76 @@
+<!-- Author Henrique Oliveira ID: 20190611 -->
+
+<!-- HTML5 doctype -->
+<!DOCTYPE html> 
+
+<!-- Language set to english-->
+<html lang = "en">
+
+	<!-- Head of the page -->
+	<head>
+		<!-- Character set -->
+		<meta charset = "UTF-8"> 
+		<!-- Title of the page -->
+		<title>CA2 Henrique</title> 
+		<!-- This is the use of an external CSS -->	
+		<link rel = "stylesheet" href = "style.css" type = "text/css">
+		<!-- This is the use of a jQuery -->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- This is the use of an external Javascript -->
+		<script src = "js_external.js"></script>
+		
+	</head>
+	
+	<!-- Body of the page -->
+	<body>
+		
+		<!-- Heading 1 -->
+		<h1>Finnegan's &trade;</h1>
+		
+			<!-- Div for style in CSS-->
+			<div id = "wrap">
+				
+				<!-- Form created as loginForm -->
+				<form name = "loginForm" id = "loginForm" action = "orderform.html" method = "post" onsubmit = "return validateInfo()">
+							
+					<!--  Paragraph of the form -->
+					<p>LOGIN<p>
+					
+						<!-- Fieldset for border -->
+						<fieldset>	
+						
+							<!-- Table inside of form -->
+							<table>
+							
+								<tr>
+									<td>
+										<label for = "username">USERNAME</label>
+									</td>
+									
+									<td>
+										<input type = "text" name = "username" id = "username" size = "30" 
+										 title = "Please enter username" placeholder = "Username">
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label for = "password">PASSWORD</label>
+									</td>
+									
+									<td>
+										<input type = "password" name = "password" id = "password" size = "30"
+										 maxlength = "9" title = "Please enter password" placeholder = "Password">
+									</td>
+								</tr>
+								
+							</table>	
+							
+						</fieldset>
+
+							<input type = "submit" id = "submitLogin" value = "Login">
+								
+				</form>
+			</div>
+	</body>
+</html>

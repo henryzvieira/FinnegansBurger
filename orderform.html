@@ -1,0 +1,94 @@
+<!-- Author Henrique Oliveira ID: 20190611-->
+
+<!-- HTML5 doctype -->
+<!DOCTYPE html> 
+
+<!-- Language set to english-->
+<html lang = "en">
+
+	<!-- Head of the page -->
+	<head>
+		<!-- Character set -->
+		<meta charset = "UTF-8"> 
+		<!-- Title of the page -->
+		<title>CA2 Henrique</title> 
+		<!-- This is the use of an external CSS -->	
+		<link rel = "stylesheet" href = "style.css" type = "text/css">
+		<!-- This is the use of a jQuery -->
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- This is the use of an external Javascript -->
+		<script src = "js_external.js"></script>
+		
+	</head>
+	
+	<!-- Body of the page -->
+	<body onload = "hideTotal()">
+		
+		<!-- Heading 1 -->
+		<h1>Finnegan's &trade;</h1>
+		
+		<!-- Div for style in CSS-->
+		<div id = "wrap">
+		
+			<!-- Form created as orderForm -->
+			<form id = "orderForm" onsubmit = "return false;">
+			
+				<!--  Pragraph of the form -->	
+				<p>ORDER: NO FUSS BURGER</p>
+				
+					<!-- Fieldset for border -->
+					<fieldset>
+					
+						<!-- Table inside of form -->
+						<table>
+								
+							<tr>
+								<td>
+									<label for = "size">BURGER SIZE</label>
+								</td>
+								
+								<td>
+									<select name = "size" id = "size" onchange = "calculateTotal()">
+										<option value = "none">Select Size</option>
+										<option value = "large">6oz Large &euro;7.00</option>
+										<option value = "extra-large">10oz Extra-Large &euro;9.00</option>
+										<option value = "supersize">16oz Supersize &euro;17,50</option>	
+									</select>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									 <label for = "quantity">NUMBER OF BURGERS</label>
+								</td>
+								
+								<td>
+									<input type = "number" name = "quantity" id = "quantity" min = "1" value = "1" 
+									onchange = "calculateTotal()">
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<label for = "discountCode">DISCOUNT CODE</label>
+								</td>
+								
+								<td>
+									 <input type = "text" name = "discountCode" id = "discountCode" 
+									 title = "Please enter your Discount Code" placeholder = "Discount Code" onchange = "calculateTotal()">
+								</td>
+							</tr>
+						
+						</table>
+						
+					</fieldset>
+
+						<!-- Div for Total -->
+						<div id = "burgerTotal"></div>
+				
+							<input type="submit" id = "checkout" value = "Checkout">
+
+			</form>
+		</div>
+	</body>
+</html>
